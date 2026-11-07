@@ -1,0 +1,40 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    ".devcontainer/",
+    ".pre-commit-config.yaml",
+    ".gitignore",
+    "pyproject.toml"
+  ],
+  "words": [
+    "argnames",
+    "argvalues",
+    "configfile",
+    "Datalog",
+    "datalogprogram",
+    "docstrings",
+    "doctest",
+    "doctests",
+    "fsms",
+    "idlist",
+    "INTERP",
+    "learningsuite",
+    "mathit",
+    "mathtt",
+    "myproject",
+    "mypy",
+    "naddopts",
+    "passoff",
+    "pluggy",
+    "pycache",
+    "pyproject",
+    "pytest",
+    "QMARK",
+    "repr",
+    "rootdir",
+    "schemelist",
+    "tablefmt",
+    "venv"
+  ]
+}

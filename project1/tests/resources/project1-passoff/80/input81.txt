@@ -1,0 +1,13 @@
+
+
+# valid strings
+
+'This is a string'
+
+''
+
+'' 'bob'
+
+'frank'
+
+'{}[]()!@#$%^&*'

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=74.1.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project0"
+description = "Training for learning the BYU CS 236 project layouts"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[project.scripts]
+project0 = "project0.project0:project0cli"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "mypy",
+  "ruff",
+  "pre-commit",
+]
+
+classroom = [
+  "pytest",
+]
+
+[tool.ruff]
+lint.extend-select = ["I","FIX002", "TD001"]
+target-version = "py312"
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/mypy.toml"
+
+[tool.mypy]
+exclude = [
+   "(^|/)tests?/",
+]
+check_untyped_defs = true
+strict = true

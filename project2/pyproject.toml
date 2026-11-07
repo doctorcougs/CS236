@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=74.1.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project2"
+description = "A parser for the BYU CS 236 Datalog interpreter"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[project.scripts]
+project2 = "project2.project2:project2cli"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "mypy",
+  "ruff",
+  "pre-commit",
+  "ipykernel",
+  "ipytest",
+]
+
+classroom = [
+  "pytest",
+]
+
+[tool.ruff]
+target-version = "py312"
+lint.extend-select = ["I","FIX002", "TD001"]
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/mypy.toml"
+
+[tool.mypy]
+files = ["src"]
+exclude = [
+  "(^|/)tests?/",
+]
+check_untyped_defs = true
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --doctest-report ndiff"

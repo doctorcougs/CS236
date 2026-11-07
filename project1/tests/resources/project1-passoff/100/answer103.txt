@@ -1,0 +1,7 @@
+(ID,"snap",1)
+(LEFT_PAREN,"(",1)
+(STRING,"'don''t take away apostrophe'",1)
+(RIGHT_PAREN,")",1)
+(Q_MARK,"?",1)
+(EOF,"",2)
+Total Tokens = 6

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=74.1.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homework1"
+description = "Set operations and unit testing with pytest for BYU CS 236"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "mypy",
+  "ruff",
+  "pre-commit",
+]
+
+classroom = [
+  "pytest",
+]
+
+[tool.ruff]
+lint.extend-select = ["I","FIX002", "TD001"]
+target-version = "py312"
+
+[tool.mypy]
+exclude = [
+   "(^|/)tests?/",
+]
+check_untyped_defs = true
+strict = true
+
+
+
